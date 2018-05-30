@@ -1,0 +1,1219 @@
+    @font-face{
+        font-family: Anton;
+        src: url(../fonts/Anton-Regular.ttf);
+    }
+
+    @font-face{
+        font-family: Roboto Condensed;
+        src: url(../fonts/RobotoCondensed-Bold.ttf);
+        src: url(../fonts/RobotoCondensed-Regular.ttf);
+    }
+
+    @font-face{
+        font-family: "Times New Roman PS - Bold MT";
+        src: url(../fonts/TimesNewRomanPS.ttf);
+    }
+    
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    body{
+        background-color: #fff;
+    }
+
+    /*header*/
+
+        header{
+            background-color: #222;
+        }
+
+            .header1{
+                position: relative;
+            }
+
+            .header-fon{
+                background: url(../images/3-layers.png) no-repeat;
+                position: absolute;
+                top: 0;
+                left: 47px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .logotip{
+                margin-top: 32px;
+            }
+
+            .logotip1{
+                display: table-cell;
+                vertical-align: middle;
+                padding-right: 15px;
+            }
+
+            .logotip>a{
+                display: table-cell;
+                vertical-align: middle;
+                color: #fff;
+                font-family: Anton;
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 1.45px;
+                text-transform: uppercase;
+                text-decoration: none;
+                word-wrap: break-word;
+            }
+
+            .green{
+                color: #81d742;
+            }
+
+            .blue{
+                color: #32b4e6;
+            }
+
+            .letai_vysoko{
+                display: block;
+                color: #ffffff;
+                font-family: "Roboto Condensed";
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1.45px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                text-align: center;
+                margin-top: 34px;
+            }
+
+            .telephone{
+                position: relative;
+                float: left;
+                margin-top: 28px;
+                word-wrap: break-word;
+            }
+
+                .telephone>li>span{
+                    position: relative;
+                    color: #32b4e6;
+                    font-family: "Roboto Condensed";
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 6.12px;
+                    cursor: pointer;
+                }
+
+                    .telephone>li>span:before{
+                        content: "";
+                        position: absolute;
+                        top: 9px;
+                        left: 150.4px;  
+                        width: 3px;
+                        height: 8px;
+                        background-color: #32b4e6;
+                    }
+
+                    .telephone>li>span[aria-expanded="true"]:before{
+                        content: "";
+                        position: absolute;
+                        top: 4px;
+                        left: 150.4px;  
+                        width: 3px;
+                        height: 8px;
+                        background-color: #32b4e6;
+                    }
+
+                    .telephone>li>span:after{
+                        content: "";
+                        position: absolute;
+                        top: 4px;
+                        left: 149px;
+                        border-right: 3px solid transparent;
+                        border-bottom: 5px solid #32b4e6;
+                        border-left: 3px solid transparent;
+                    }
+
+                    .telephone>li>span[aria-expanded="true"]:after{
+                        content: "";
+                        position: absolute;
+                        transform: rotate(180deg);
+                        top: 12px;
+                        left: 149px;
+                        border-right: 3px solid transparent;
+                        border-bottom: 5px solid #32b4e6;
+                        border-left: 3px solid transparent;
+                    }
+
+                .telephone>li>a:hover, .telephone>li>a:visited, .telephone>li>a:link{
+                    color: #32b4e6;
+                    text-decoration: none;
+                }
+
+                .telephone>li>ul{
+                    background-color: #32b4e6;
+                }
+
+                .telephone>li>ul:before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #ffffff;
+                }
+
+                .telephone>li>ul>li{
+                    color: #222222;
+                    font-family: "Roboto Condensed";
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 6.12px;
+                    padding: 10px 14px 10px 15px;
+                    cursor: pointer;
+                }
+
+                .telephone>li>ul>li:first-child{
+                    padding-top: 20px;
+                }
+
+                .telephone>li>ul>li:last-child{
+                    padding-bottom: 16px;
+                }
+
+
+            .e-mail{
+                float: left;
+                margin-top: 28px;
+            }
+
+                .e-mail>li>span{
+                    color: #81d742;
+                    font-family: "Roboto Condensed";
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 6.12px;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+
+                    .e-mail>li>span:before{
+                        content: "";
+                        position: absolute;
+                        top: 6px;
+                        left: 133px;  
+                        width: 3px;
+                        height: 8px;
+                        background-color: #81d742;
+                    }
+
+                        .e-mail>li>span[aria-expanded="true"]:before{
+                            content: "";
+                            position: absolute;
+                            top: 1px;
+                            left: 133px;  
+                            width: 3px;
+                            height: 8px;
+                            background-color: #81d742;
+                        }
+
+                    .e-mail>li>span:after{
+                        content: "";
+                        position: absolute;
+                        top: 2px;
+                        left: 131.5px;
+                        border-right: 3px solid transparent;
+                        border-bottom: 5px solid #81d742;
+                        border-left: 3px solid transparent;
+                    }
+
+                        .e-mail>li>span[aria-expanded="true"]:after{
+                            content: "";
+                            position: absolute;
+                            transform: rotate(180deg);
+                            top: 9px;
+                            left: 131.5px;
+                            border-right: 3px solid transparent;
+                            border-bottom: 5px solid #81d742;
+                            border-left: 3px solid transparent;
+                        }
+
+                .e-mail>li>span:visited, .e-mail_li_a:hover, .e-mail_li_a:link{
+                    color: #81d742;
+                    text-decoration: none;
+                }
+
+                .e-mail>li>ul{
+                    background-color: #81d742;
+                }
+
+                .e-mail>li>ul:before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #ffffff;
+                }
+
+                .e-mail>li>ul>li{
+                    color: #222222;
+                    font-family: "Roboto Condensed";
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 6.12px;
+                    padding: 12px 14px 12px 15px;
+                    cursor: pointer;
+                }
+
+                .e-mail>li>ul>li:first-child{
+                    padding-top: 21px;
+                }
+
+                .e-mail>li>ul>li:last-child{
+                    padding-bottom: 17px;
+                }
+
+            #language>li{
+                padding-right: 11px;
+                padding-top: 16px;
+                text-align: center;
+            }
+
+            #language>li:last-child{
+                padding-right: 0;
+            }
+
+            .navbar-inverse #language>li>a{
+                color: #999999;
+                font-size: 16px;
+                font-family: "Roboto Condensed";
+                text-transform: none;
+                text-decoration: none;
+                border-bottom: 1px dashed #999999;
+            }
+
+            #language>li>a:hover{
+                color: #fff;
+                text-decoration: none;
+                border-bottom: 1px dashed #fff;
+            }
+
+            #valuta>li{
+                padding-right: 11px;
+                padding-top: 16px;
+                text-align: center;
+            }
+
+            #valuta>li:last-child{
+                padding-right: 0;
+            }
+
+            .navbar-inverse #valuta>li>a{
+                color: #999999;
+                font-size: 16px;
+                font-family: "Roboto Condensed";
+                text-transform: none;
+                text-decoration: none;
+                border-bottom: 1px dashed #999999;
+            }
+
+            #valuta>li>a:hover{
+                color: #fff;
+                text-decoration: none;
+                border-bottom: 1px dashed #fff;
+            }
+
+
+            .top-menu{
+                border: 0;
+                margin-bottom: 0;
+            }
+
+            .top-menu_span{
+                border: none;
+            }
+
+            .menu>li{
+                margin-right: 40px;
+                text-align: center;
+            }
+
+            #bs-example-navbar-collapse-3 .menu>li>a[aria-expanded="true"]{
+                background-color: transparent;
+                color: #81d742;
+            }
+
+            .top-menu .navbar-header{
+                color: #999999;
+                cursor: pointer;
+                padding: 0;
+            }
+
+            .navbar-inverse .navbar-nav>li>a{
+                color: #fff;
+                font-family: "Roboto Condensed";
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 6.12px;
+                text-transform: uppercase;
+                border-bottom: 2px solid transparent;
+                padding-bottom: 10px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .navbar-inverse .navbar-nav>li>a:hover{
+                text-decoration: none;
+                color: #81d742; 
+                border-bottom: 2px solid #fff;               
+            }
+
+            .navbar-inverse .navbar-nav #language>li>a>li>a{
+                color: #999999;
+                text-decoration: none;
+                border-bottom: 1px dashed #999999;
+            }
+
+            .navbar-inverse .navbar-nav #valuta>li>a>li>a{
+                color: #999999;
+                text-decoration: none;
+                border-bottom: 1px dashed #999999;
+            }
+
+            .menu>li>ul{
+                background-color: #81d742;
+                position: absolute;
+                margin-top: 13px;
+                margin-left: -40px;
+                display: none;
+                z-index: 2;
+            }
+
+            .menu>li>ul>li{
+                margin-top: 16px;
+                margin-left: 22px;
+            }
+
+            .menu>li>ul>li:first-child{
+                margin-top: 26px;
+            }
+
+            .menu>li>ul>li:last-child{
+                margin-bottom: 27px;
+            }
+
+            .menu>li>ul>li>a{
+                position: relative;
+                color: #222222;
+                font-family: "Roboto Condensed";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 6.12px;
+                padding-left: 14px;
+            }
+
+            .menu>li>ul>li>a:before{
+                content: "";
+                position: absolute;
+                top: 6px;
+                left: -3px;  
+                width: 6px;
+                height: 2px;
+                background-color: #ffffff;
+            }
+
+                .menu>li>ul>li>a:hover:before{
+                    background-color: #222;
+                }
+
+            .menu>li>ul>li>a:after{
+                content: "";
+                position: absolute;
+                top: 4px;
+                left: 3px;
+                border-top: 3px solid transparent;
+                border-bottom: 3px solid transparent;
+                border-left: 5px solid #fff;
+            }
+
+                .menu>li>ul>li>a:hover:after{
+                    border-left: 5px solid #222;
+                }
+
+            .menu>li>ul>li>a:hover{
+                color: #ffffff;
+                font-family: "Roboto Condensed";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 6.12px;
+                text-decoration: none;
+                background-color: #81d742;
+            }
+
+            .clearfix{
+                clear: both;
+            }
+
+    /*Наши услуги*/
+
+        .nashi_uslugi{
+            margin-bottom: 77px;
+        }
+
+            .nashi_uslugi>h2:first-child{
+                position: relative;
+                color: #222222;
+                font-family: "Roboto Condensed";
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 35px;
+                text-transform: uppercase;
+                margin-top: 80px;
+                margin-left: 50px;
+                text-align: center;
+            }       
+
+                .nashi_uslugi>h2:first-child:before{
+                    content: "";
+                    position: absolute;
+                    top: 140%;
+                    left: 46%;
+                    width: 57px;
+                    height: 2px;
+                    background-color: #81d742;
+                }
+
+            .nashi_uslugi>div>div>h2{
+                position: relative;
+                margin-top: 27px;
+                margin-bottom: 38px;
+                color: #222222;
+                font-family: "Roboto Condensed";
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                text-transform: uppercase;
+            }
+
+            .nashi_uslugi>div>div>h2:before{
+                content: "";
+                position: absolute;
+                top: 140%;
+                left: 43%;
+                width: 39px;
+                height: 1px;
+                background-color: #81d742;
+            }      
+
+            .nashi_uslugi_article{
+                text-align: center;
+                margin-top: 87px;
+                float: left;
+            }
+
+                .nashi_uslugi_1_text{
+                    color: #999999;
+                    font-family: "Roboto Condensed";
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 21px;
+                }  
+
+        /*Наши работы*/ 
+
+        .nashi_raboty{
+            background: url(../images/-----281.png);
+            background-size: cover;
+        }
+
+            .nashi_raboty_div{
+                background-color: #81d742;
+                opacity: 0.85;
+            }
+
+            .nashi_raboty_div_h2{
+                position: relative;
+                color: #222;
+                font-family: "Roboto Condensed";
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 35px;
+                text-transform: uppercase;
+                margin-top: 100px;
+                margin-bottom: 54px;
+                text-align: center;
+            }
+
+            .nashi_raboty_div_h2:before{
+                content: "";
+                position: absolute;
+                top: 140%;
+                left: 47%;
+                width: 57px;
+                height: 2px;
+                background-color: #fff;
+            }
+
+            #nashi_raboty_nav>ul{
+                border-bottom: none;
+                margin-bottom: 33px;
+            }
+
+            #nashi_raboty_nav>ul>li>a{
+                background: transparent;
+                border: none;
+                color: #222;
+                font-family: "Roboto Condensed";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 33px;
+                padding: 0;
+                padding-bottom: 4px;
+                margin-bottom: 2px;
+                cursor: pointer;
+                text-align: left;
+            }
+
+            #nashi_raboty_nav>ul>li>a>span{
+                border-bottom: 1px dashed #222;
+            }
+
+                #nashi_raboty_nav>ul>li>a>span:hover{
+                    color: #fff;
+                    border-bottom: 1px dashed #fff;
+                }
+
+            .nashi_raboty_carousel{
+                background-color: #222;
+                opacity: 0.9;
+                height: 629px;
+            }
+
+            .owl-carousel_nashi_raboty{
+                margin-top: 80px;
+            }
+
+            .nashi_raboty_carousel .item>h4{
+                position: relative;
+                color: #81d742;
+                font-family: "Roboto Condensed";
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                text-transform: uppercase;
+                margin-top: 27px;
+                margin-bottom: 38px;
+            }
+
+                .nashi_raboty_carousel .item>h4:before{
+                    content: "";
+                    position: absolute;
+                    top: 24px;
+                    left: 45%;
+                    width: 39px;
+                    height: 1px;
+                    background-color: #81d742;
+                }
+
+            .nashi_raboty_carousel .item>span{
+                color: #ffffff;
+                font-family: "Roboto Condensed";
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 21px;
+            }
+
+            .nashi_raboty_carousel .item>form>.nashi_raboty_input{
+                background: transparent;
+                width: 167px;
+                height: 40px;
+                border: 1px solid #81d742;
+                background: transparent;
+                color: #81d742;
+                font-family: "Roboto Condensed";
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20px;
+                outline: none;
+                margin-top: 30px;
+                margin-bottom: 60px;
+                text-align: center;
+            }
+
+                .nashi_raboty_carousel .item>form>.nashi_raboty_input:hover{
+                    background-color: #81d742;
+                    color: #222222;
+                }
+
+            .nashi_raboty_carousel .owl-nav button.owl-prev{
+                position: absolute;
+                top: -450px;
+                left: 4%;
+                width: 32px;
+                height: 32px;
+                background-color: transparent;
+                border-bottom: 2px solid #fff;
+                border-left: 2px solid #fff;
+                transform: rotate(45deg);
+                outline: none;
+            }
+
+                .nashi_raboty_carousel .owl-nav button.owl-prev:hover{
+                    border-bottom: 2px solid #222;
+                    border-left: 2px solid #222;
+                    background-color: transparent;
+                }
+
+            .nashi_raboty_carousel .owl-nav button.owl-next{
+                position: absolute;
+                top: -450px;
+                left: 92%;
+                width: 32px;
+                height: 32px;
+                background-color: transparent;
+                border-bottom: 2px solid #fff;
+                border-left: 2px solid #fff;
+                transform: rotate(-135deg);
+                outline: none;
+            }
+
+                .nashi_raboty_carousel .owl-nav button.owl-next:hover{
+                    border-bottom: 2px solid #222;
+                    border-left: 2px solid #222;
+                    background-color: transparent;
+                }
+
+                [aria-label] {
+                    display: none;
+                }
+
+            .nashi_raboty_div .nashi_raboty_input1{
+                display: block;
+                width: 238px;
+                height: 48px;
+                background-color: #81d742;
+                border: 1px solid #222222;
+                color: #222;
+                font-family: "Roboto Condensed";
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 20px;
+                outline: none;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+                .nashi_raboty_div .nashi_raboty_input1:hover{
+                    background-color: #222222;
+                    color: #ffffff;
+                }
+
+            .owl-dots{
+                display: none;
+            }
+
+    /*Наши преимущества*/
+
+        .nashi_preimuschestva_1{
+            margin-top: 75px;
+            margin-bottom: 78px;
+        }
+
+            .nashi_preimuschestva>h2{
+                margin-top: 100px;
+                position: relative;
+                color: #222222;
+                font-family: "Roboto Condensed";
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 35px;
+                text-transform: uppercase;
+                text-align: center;
+                word-wrap: break-word;
+            }
+
+            .nashi_preimuschestva>h2:before{
+                content: "";
+                position: absolute;
+                top: 140%;
+                left: 46%;
+                width: 57px;
+                height: 2px;
+                background-color: #81d742;
+            }
+
+            .nashi_preimuschestva_h2{
+                color: #222222;
+                font-family: "Roboto Condensed";
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                text-transform: uppercase;
+                margin-top: 10px;
+            }
+
+            .nashi_preimuschestva_img{
+                padding-bottom: 19px;
+            }
+
+            .nashi_preimuschestva_text{
+                color: #999999;
+                font-family: "Roboto Condensed";
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 21px;
+            }
+
+            .margin-top_42{
+                margin-top: 42px;
+            }
+
+    /*Коротко о нашей о веб-студии*/
+
+        .korotko_o_studii{
+            background-image: url(../images/-----40.png);
+            background-size: cover;
+        }
+
+            .korotko_o_studii_div{
+                background-color: #32b4e6;
+                opacity: 0.85;
+            }
+
+            .korotko_o_studii_h2{
+                position: relative;
+                margin-top: 72px;
+                color: #222222;
+                font-family: "Roboto Condensed";
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 35px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            .korotko_o_studii_h2:before{
+                content: "";
+                position: absolute;
+                top: 140%;
+                left: 44%;
+                width: 57px;
+                height: 2px;
+                background-color: #ffffff;
+            }
+
+            .korotko_o_studii_text{
+                display: block;
+                color: #ffffff;
+                font-family: "Roboto Condensed";
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 21px;
+                margin-top: 82px;
+                margin-bottom: 68px;
+            }
+
+    /*Наши клиенты*/
+
+    .nashi_klienty_h2{
+        position: relative;
+        margin: 80px 0;
+        color: #222222;
+        font-family: "Roboto Condensed";
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 35px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+        .nashi_klienty_h2:before{
+            content: "";
+            position: absolute;
+            top: 140%;
+            left: 46%;
+            width: 57px;
+            height: 2px;
+            background-color: #81d742;
+        }
+
+        .nashi_klienty_carousel{
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        /* Thanks for checking out this PEN.
+    If you have any question, please feel free to contact me via email(immad.hamid@gmail.com) 
+    For more pen visit codepen.io/immad-hamid */
+    .carousel-wrap {
+      margin: 90px auto;
+      padding: 0 5%;
+      width: 80%;
+      position: relative;
+    }
+    .owl-carousel .item {
+      position: relative; /* fix blank or flashing items on carousel */
+      z-index: 100; /* fix blank or flashing items on carousel */
+      -webkit-backface-visibility: hidden; /* fix blank or flashing items on carousel */
+    }
+
+    .owl-nav{
+        position: relative;
+    }
+
+    .owl-nav > div {
+      margin-top: -26px;
+      position: absolute;
+      top: 50%;
+      color: #cdcbcd;
+    }
+    .owl-nav i {
+      font-size: 52px;
+    }
+
+    .owl-nav .owl-next i {
+        right: 0;
+    }
+
+    .owl-nav .owl-prev {
+        left: 0;
+        height: 100%;
+        top: 0;
+        margin-top: 0;
+        width: 32.33333%;
+    }
+
+    .nashi_klienty_carousel .owl-nav button.owl-prev{
+        position: absolute;
+        top: -63px;
+        left: -18%;
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border-bottom: 2px solid #ccc;
+        border-left: 2px solid #ccc;
+        transform: rotate(45deg);
+        outline: none;
+    }
+
+        .nashi_klienty_carousel .owl-nav button.owl-prev:hover{
+            border-bottom: 2px solid #222;
+            border-left: 2px solid #222;
+        }
+
+    .nashi_klienty_carousel .owl-next {
+        right: 0px;
+        width: 32.33333%;
+        top: 0;
+        margin: 0;
+        height: 100%;
+    }
+
+    .nashi_klienty_carousel .owl-nav button.owl-next{
+        position: absolute;
+        top: -63px;
+        left: 110%;
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border-bottom: 2px solid #ccc;
+        border-left: 2px solid #ccc;
+        transform: rotate(-135deg);
+        outline: none;
+    }
+
+        .nashi_klienty_carousel .owl-nav button.owl-next:hover{
+            border-bottom: 2px solid #222;
+            border-left: 2px solid #222;
+        }
+
+
+
+    /*Отзывы клиентов*/
+
+    .otzyvy{
+        background: url(../images/-----49.png);
+        background-size: cover;
+    }
+
+    .otzyvy_h2{
+        position: relative;
+        margin-top: 60px;
+        margin-bottom: 70px;
+        text-align: center;
+        color: #ffffff;
+        font-family: "Roboto Condensed";
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 35px;
+        text-transform: uppercase;
+    }
+
+        .otzyvy_h2:before{
+            content: "";
+            position: absolute;
+            top: 140%;
+            left: 46%;
+            width: 57px;
+            height: 2px;
+            background-color: #81d742;
+        }
+
+    .item{
+        text-align: center;
+    }
+
+    .item>div{
+        margin-top: 5px;
+    }
+
+    .ivanov{
+        margin-top: 20px;
+        color: #81d742;
+        font-family: "Roboto Condensed";
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .ivan{
+        position: relative;
+        color: #81d742;
+        font-family: "Roboto Condensed";
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+        .ivan:before{
+            content: "";
+            position: absolute;
+            top: 120%;
+            left: 40%;
+            width: 39px;
+            height: 1px;
+            background-color: #81d742;
+        }
+
+    .bulding{
+        margin-top: 30px;
+        margin-bottom: 70px;
+        color: #81d742;
+        font-family: "Roboto Condensed";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .kavychka{
+        color: #81d742;
+        font-family: "Times New Roman PS - Bold MT";
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 21px;
+        margin-top: 5px;
+        margin-bottom: 27px;
+    }
+
+    .otzyvy_text{
+        color: #ffffff;
+        font-family: "Roboto Condensed";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+    .otzyvy_left{
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border-bottom: 2px solid #eee;
+        border-left: 2px solid #eee;
+        transform: rotate(45deg);
+        margin-top: 105px;
+    }
+
+        .otzyvy_left:hover{
+            border-bottom: 2px solid #81d742;
+            border-left: 2px solid #81d742;
+        }
+
+    .otzyvy_right{
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border-bottom: 2px solid #eee;
+        border-left: 2px solid #eee;
+        transform: rotate(-135deg);
+        margin-top: 105px;
+    }
+
+        .otzyvy_right:hover{
+            border-bottom: 2px solid #81d742;
+            border-left: 2px solid #81d742;
+        }
+
+    .carousel-control.left{
+        background: transparent;
+    }
+
+    .carousel-control.right{
+        background: transparent;
+    }
+
+    /*footer*/
+
+    footer{
+        background-color: #222;
+    }
+
+        .footer1{
+            position: relative;
+        }
+
+        .footer-fon{
+            background: url(../images/footer.png) no-repeat;
+            position: absolute;
+            top: 0;
+            left: 38px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer_logotip{
+            margin-top: 70px;
+        }
+
+        .footer-menu{
+            border: 0;
+            margin-top: 103px;
+            margin-bottom: 0px;
+        }
+
+        #menu_a>li{
+            margin-right: 28px;
+        }
+
+        .footer_telephone{
+            float: none;
+            margin-top: 55px;
+        }
+
+        .footer_e-mail{
+            float: none;
+            margin-top: 12px;
+        }
+
+        .copyright{
+            display: block;
+            color: #999999;
+            font-family: "Roboto Condensed";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 6.12px;
+            margin-top: 46px;
+            margin-bottom: 55px;
+        }
+
+
+    @media screen and (max-width: 768px){
+
+        .logotip{
+            padding-left: 10%
+        }
+
+        .navbar-inverse .navbar-nav>li>a{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .navbar-inverse .navbar-nav>li>ul>li>a{
+            text-align: center;
+        }
+
+        .nashi_uslugi>h2:first-child:before{
+            left: 43%;
+        }
+
+        #nashi_raboty_nav>ul>li{
+            padding-bottom: 18px;
+        }
+    }
+
+    @media screen and (min-width: 500px) and (max-width: 768px){
+
+        .nashi_raboty_input1{
+            margin-left: 60px;
+        }
+    }
+
+    @media screen and (max-width: 500px){
+
+        .logotip{
+            padding-left: 6%
+        }
+
+        .nashi_uslugi>h2:first-child:before{
+            left: 37%;
+        }
+
+        .ivanov{
+            margin-left: 25px;
+        }
+
+        .ivan{
+            margin-left: 23px;
+        }
+
+            .ivan:before{
+                left: 26%;
+            }
+
+        .bulding{
+            margin-left: 25px;
+        }
+    }
